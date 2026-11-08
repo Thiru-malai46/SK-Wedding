@@ -1,0 +1,48 @@
+/**
+ * =========================================================================
+ * SEASHELL PINK + ROYAL GOLD THEME SYSTEM
+ * =========================================================================
+ * Inside Page Palette: Dulux Seashell Pink, Warm Ivory, Champagne Gold
+ * Opening Page Palette: Reference Royal Maroon & Glowing Gold
+ */
+
+:root {
+  /* Opening Screen Royal Maroon Palette (Reference Match) */
+  --color-opening-maroon-dark: #220000;
+  --color-opening-maroon-mid: #3b0000;
+  --color-opening-maroon-bright: #5d0000;
+  --color-opening-gold: #D4AF37;
+  --color-opening-gold-light: #FFF5C3;
+
+  /* Inside Page Dulux Seashell Pink Luxury Palette */
+  --color-seashell-pink: #F8E2D4;
+  --color-warm-ivory: #FFF9F4;
+  --color-champagne-gold: #C6A15B;
+  --color-champagne-gold-hover: #b38e49;
+  --color-champagne-gold-light: #E8D3A7;
+  --color-soft-blush: #F3D4CA;
+  --color-muted-rose: #B77C78;
+  --color-deep-brown: #49352F;
+  --color-deep-brown-light: #6b534b;
+  --color-card-border: rgba(198, 161, 91, 0.35);
+  --color-card-shadow: 0 16px 40px rgba(73, 53, 47, 0.08);
+  --color-gold-glow: 0 0 25px rgba(212, 175, 55, 0.45);
+
+  /* Typography */
+  --font-royal: 'Cormorant Garamond', 'Italiana', 'Playfair Display', Georgia, serif;
+  --font-serif: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  --font-script: 'Great Vibes', 'Alex Brush', cursive;
+  --font-sans: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Border Radii */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+}

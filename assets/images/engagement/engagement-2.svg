@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="eGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9F4"/>
+      <stop offset="100%" stop-color="#F8E2D4"/>
+    </linearGradient>
+    <linearGradient id="egold2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#C6A15B"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#eGrad2)"/>
+  <rect x="15" y="15" width="570" height="420" rx="16" fill="none" stroke="url(#egold2)" stroke-width="2"/>
+  <rect x="25" y="25" width="550" height="400" rx="12" fill="none" stroke="#B77C78" stroke-width="1" stroke-dasharray="6 4"/>
+
+  <!-- Traditional Festive Bells & Flowers Motif -->
+  <g transform="translate(300, 180)">
+    <circle r="65" fill="#FFF9F4" stroke="url(#egold2)" stroke-width="3"/>
+    <!-- Festive Bells -->
+    <path d="M-15,-20 Q-25,10 -30,15 L0,15 Q-5,10 -15,-20 Z" fill="#C6A15B"/>
+    <circle cx="-15" cy="20" r="4" fill="#B77C78"/>
+    <path d="M15,-20 Q5,10 0,15 L30,15 Q25,10 15,-20 Z" fill="#D4AF37"/>
+    <circle cx="15" cy="20" r="4" fill="#B77C78"/>
+    <!-- Auspicious Garland Knot -->
+    <circle cx="0" cy="-22" r="6" fill="#49352F"/>
+  </g>
+
+  <text x="300" y="320" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="22" font-weight="bold" fill="#49352F">CELEBRATION MOMENTS</text>
+  <text x="300" y="350" text-anchor="middle" font-family="'Poppins', sans-serif" font-size="13" font-weight="600" fill="#C6A15B" letter-spacing="2">PHOTO PLACEHOLDER</text>
+  <text x="300" y="380" text-anchor="middle" font-family="'Courier New', monospace" font-size="11" fill="#6b534b">assets/images/engagement/engagement-2.svg</text>
+</svg>

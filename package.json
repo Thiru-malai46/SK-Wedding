@@ -1,0 +1,19 @@
+{
+  "name": "sk-wedding",
+  "version": "1.0.0",
+  "description": "Royal Indian Wedding Invitation Website for K Suriya & V Kaviya",
+  "private": true,
+  "scripts": {
+    "start": "python -m http.server 3000",
+    "deploy": "npx vercel"
+  },
+  "keywords": [
+    "wedding",
+    "invitation",
+    "suriya-kaviya",
+    "tamil-wedding",
+    "luxury-invitation"
+  ],
+  "author": "SK Wedding",
+  "license": "MIT"
+}

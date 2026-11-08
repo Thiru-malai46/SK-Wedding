@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SK Wedding — K Suriya ♥ V Kaviya | 22 November 2026</title>
+
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="SK Wedding — K Suriya ♥ V Kaviya | 22 November 2026" />
+  <meta name="description" content="Together with our families, K Suriya and V Kaviya request the honour of your presence at their wedding celebration on Sunday, 22 November 2026." />
+  <meta name="keywords" content="SK Wedding, Suriya Kaviya Wedding, Tamil Wedding, Invitation, SVS Lakshmi Palace, Pallikonda, Arulmigu Uthira Ranganathar Swamy Temple" />
+  <meta name="author" content="K Suriya & V Kaviya" />
+  <meta name="theme-color" content="#EACAB5" />
+
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sk-wedding-suriya-kaviya.vercel.app/" />
+  <meta property="og:title" content="SK Wedding — K Suriya ♥ V Kaviya | 22 November 2026" />
+  <meta property="og:description" content="We warmly invite you to celebrate our wedding ceremony & reception on Sunday, 22 November 2026. Your presence means the world to us." />
+  <meta property="og:image" content="assets/images/palace-arch-front.jpg" />
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Italiana&family=Prata&family=Cinzel:wght@500;600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&family=Signika:wght@700;800;900&family=Outfit:wght@800;900&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/seashell-theme.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Floating Rose Petals & Gold Sparkle Background Canvas -->
+  <canvas id="petals-canvas"></canvas>
+
+  <!-- Subtle Inside Background Texture -->
+  <div class="inside-texture-bg"></div>
+
+  <!-- Toast Notification Popup -->
+  <div id="appToast" class="app-toast">Link copied to clipboard!</div>
+
+  <!-- =========================================================================
+       BACKGROUND MUSIC PLAYER & FLOATING ROYAL CONTROLLER
+       ========================================================================= -->
+  <audio id="weddingBgMusic" preload="auto" loop playsinline>
+    <source src="assets/audio/wedding-music.m4a" type="audio/mp4" />
+    <source src="assets/audio/wedding-music.webm" type="audio/webm" />
+  </audio>
+
+  <!-- Floating Royal Music Controller Pill -->
+  <aside class="wedding-music-widget" aria-label="Wedding Music Player">
+    <button
+      id="musicToggleBtn"
+      class="music-toggle-btn is-paused"
+      type="button"
+      aria-label="Play or pause background music"
+      aria-pressed="false"
+      title="Background Music: Mangalyam Tantunanena (Alaipayuthey)"
+    >
+      <span class="music-icon-disc">
+        <svg class="music-note-svg" viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+          <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+        </svg>
+      </span>
+      <span class="music-equalizer">
+        <span class="eq-bar bar-1"></span>
+        <span class="eq-bar bar-2"></span>
+        <span class="eq-bar bar-3"></span>
+      </span>
+      <span id="musicLabel" class="music-label-text">Music</span>
+    </button>
+  </aside>
+
+  <!-- =========================================================================
+       1. OPENING INVITATION SCREEN (Royal Palace Arch, Lantern & Twin Peacocks)
+       ========================================================================= -->
+  <div id="opening-screen">
+    <!-- Ambient Backdrop for Larger Displays -->
+    <div class="palace-opening-backdrop"></div>
+
+    <!-- Center: Royal Palace Arch Invitation Card Frame with Peacocks -->
+    <div class="palace-card-container">
+      <div class="palace-card-frame">
+        <!-- Background Art with Palace Arch, Hanging Lantern & Center Symmetrical Peacocks -->
+        <img
+          src="assets/images/palace-arch-front.jpg"
+          alt="Royal Palace Archway with Lantern and Peacocks"
+          class="palace-card-bg-img"
+        />
+
+        <!-- Subtle Warm Lantern Aura Glow -->
+        <div class="lantern-light-glow"></div>
+
+        <!-- Card Content Layer (Centered precisely within the arch opening, above peacocks) -->
+        <div class="palace-card-content">
+          <!-- Subtle Top Family Monogram -->
+          <div class="palace-top-badge">
+            <span class="palace-monogram">SK</span>
+            <span class="palace-intro-line">TOGETHER WITH OUR FAMILIES</span>
+          </div>
+
+          <!-- Groom's Name in Bold Elegant Royal Serif -->
+          <h1 class="palace-groom-name">K SURIYA</h1>
+
+          <!-- Ornate Gold Divider -->
+          <div class="palace-ampersand-divider">
+            <span class="palace-diamond">✦</span>
+            <span class="palace-and">&amp;</span>
+            <span class="palace-diamond">✦</span>
+          </div>
+
+          <!-- Bride's Name in Bold Elegant Royal Serif -->
+          <h1 class="palace-bride-name">V KAVIYA</h1>
+
+          <!-- Auspicious Vows Statement -->
+          <p class="palace-vow-quote">
+            AS WE EXCHANGE VOWS AND BEGIN OUR<br />
+            NEW LIFE TOGETHER
+          </p>
+
+          <!-- Date & Time Capsule Badges -->
+          <div class="palace-capsules-group">
+            <div class="palace-capsule-pill">
+              <span class="capsule-icon">📅</span>
+              <span class="capsule-text">Sunday, 22 November 2026</span>
+            </div>
+            <div class="palace-capsule-pill">
+              <span class="capsule-icon">🕒</span>
+              <span class="capsule-text">7:30 AM – 9:00 AM</span>
+            </div>
+          </div>
+
+          <!-- Interactive Open Invitation Action Button -->
+          <div class="palace-action-wrap">
+            <button id="openBtn" type="button" class="palace-open-btn" aria-label="Open Wedding Invitation">
+              <span class="btn-sparkle">✨</span>
+              <span class="btn-text">OPEN INVITATION</span>
+              <span class="btn-sparkle">✨</span>
+            </button>
+            <small class="palace-instruction">Tap to Enter the Celebration</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Quick Navigation Pill (Mobile & Desktop) -->
+  <nav class="quick-nav-pill" aria-label="Quick Navigation">
+    <a href="#hero" class="quick-nav-link">Home</a>
+    <a href="#countdown" class="quick-nav-link">Countdown</a>
+    <a href="#story" class="quick-nav-link">Story</a>
+    <a href="#events" class="quick-nav-link">Events</a>
+    <a href="#gallery" class="quick-nav-link">Gallery</a>
+  </nav>
+
+  <!-- =========================================================================
+       3. HERO SECTION
+       ========================================================================= -->
+  <header id="hero" class="hero-section">
+    <div class="hero-content reveal-on-scroll">
+      <p class="hero-family-intro">Together With Our Families</p>
+      <p class="hero-request-text">Request the Honour of Your Presence</p>
+
+      <h1 class="hero-couple-title">
+        Suriya <span class="couple-ampersand">&amp;</span> Kaviya
+      </h1>
+
+      <p class="hero-wedding-status">Are Getting Married</p>
+
+      <div class="hero-date-badge">
+        <span>📅</span>
+        <span>Sunday, 22 November 2026</span>
+      </div>
+
+      <!-- Couple Photograph Area with Luxury Arch Frame -->
+      <div class="hero-photo-container">
+        <div class="hero-photo-frame">
+          <img
+            src="assets/images/hero-couple.jpg"
+            alt="Suriya and Kaviya Couple Portrait"
+            class="hero-photo-img"
+            id="heroCouplePhoto"
+          />
+        </div>
+        <div class="hero-photo-overlay-badge">
+          ✨ Suriya &amp; Kaviya ✨
+        </div>
+      </div>
+
+      <!-- Mouse Scroll Indicator -->
+      <div class="hero-scroll-indicator">
+        <div class="mouse-icon">
+          <span class="mouse-wheel"></span>
+        </div>
+        <span class="mouse-scroll-text">Scroll Down</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       4. SAVE THE DATE & LIVE COUNTDOWN
+       ========================================================================= -->
+  <section id="countdown" class="countdown-section">
+    <div class="container reveal-on-scroll">
+      <div class="section-header">
+        <span class="section-tagline">Mark Your Calendar</span>
+        <h2 class="section-title">Save The Date</h2>
+        <div class="ornament-divider">
+          <span class="ornament-line"></span>
+          <span class="ornament-diamond">✦</span>
+          <span class="ornament-line"></span>
+        </div>
+        <p class="section-subtitle">
+          Sunday, 22 November 2026 • Tamil Nadu, India<br />
+          Every second brings us closer to our forever.
+        </p>
+      </div>
+
+      <!-- Live Countdown Grid (Days, Hours, Minutes, Seconds) -->
+      <div class="countdown-grid">
+        <div class="countdown-box">
+          <div class="countdown-number" id="cd-days">00</div>
+          <div class="countdown-label">Days</div>
+        </div>
+        <div class="countdown-box">
+          <div class="countdown-number" id="cd-hours">00</div>
+          <div class="countdown-label">Hours</div>
+        </div>
+        <div class="countdown-box">
+          <div class="countdown-number" id="cd-minutes">00</div>
+          <div class="countdown-label">Minutes</div>
+        </div>
+        <div class="countdown-box">
+          <div class="countdown-number" id="cd-seconds">00</div>
+          <div class="countdown-label">Seconds</div>
+        </div>
+      </div>
+
+      <!-- Celebration message if countdown passes -->
+      <div id="cd-passed-message" class="countdown-passed-message">
+        🎉 Today We Begin Our Forever! Thank You For Celebrating With Us! 🎉
+      </div>
+
+      <!-- Calendar Actions -->
+      <div class="calendar-action-wrapper">
+        <a id="btnGoogleCalendar" class="calendar-btn" href="#" target="_blank" rel="noopener noreferrer">
+          <span>📅</span> Add to Google Calendar
+        </a>
+        <button id="btnIcsCalendar" class="calendar-btn" type="button">
+          <span>📥</span> Download Calendar Event (.ics)
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. OUR STORY SECTION (Photographic Timeline)
+       ========================================================================= -->
+  <section id="story" class="story-section">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tagline">Our Journey</span>
+        <h2 class="section-title">Our Story</h2>
+        <div class="ornament-divider">
+          <span class="ornament-line"></span>
+          <span class="ornament-diamond">✦</span>
+          <span class="ornament-line"></span>
+        </div>
+        <p class="section-subtitle">
+          With the loving blessings of our families, our journey begins with beautiful milestones leading us to a lifetime of togetherness.
+        </p>
+      </div>
+
+      <!-- Story Chapter Navigation Pills -->
+      <div class="story-nav-pills-wrap" id="storyNavPills"></div>
+
+      <!-- Timeline Container (Rendered dynamically from config.js) -->
+      <div class="story-timeline" id="storyTimeline">
+        <!-- Dynamic golden progress line indicating scroll & active milestones -->
+        <div class="story-progress-line" id="storyProgressLine"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. WEDDING EVENTS & VENUES (Ceremony & Reception)
+       ========================================================================= -->
+  <section id="events" class="events-section">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tagline">Celebrate With Us</span>
+        <h2 class="section-title">Wedding Events &amp; Venues</h2>
+        <div class="ornament-divider">
+          <span class="ornament-line"></span>
+          <span class="ornament-diamond">✦</span>
+          <span class="ornament-line"></span>
+        </div>
+        <p class="section-subtitle">
+          We warmly request your auspicious presence and blessings as we unite in holy matrimony.
+        </p>
+      </div>
+
+      <div class="events-cards-grid">
+        <!-- Card 1: Wedding Ceremony -->
+        <div class="event-venue-card reveal-on-scroll">
+          <div>
+            <div class="event-icon-badge">🛕</div>
+            <span class="event-badge-label">Auspicious Muhurtham</span>
+            <h3 class="event-card-title">WEDDING CEREMONY</h3>
+
+            <div class="event-time-pill">
+              Sunday, 22 November 2026 • 7:30 AM – 9:00 AM
+            </div>
+
+            <div class="event-details-divider"></div>
+
+            <h4 class="event-venue-heading">ARULMIGU UTHIRA RANGANATHAR SWAMY TEMPLE</h4>
+            <p class="event-venue-address">
+              Arulmigu Uthira Ranganathar Swamy Temple<br />
+              Tamil Nadu, India
+            </p>
+          </div>
+
+          <a
+            id="btnCeremonyMap"
+            href="https://www.google.com/maps/search/?api=1&query=Arulmigu+Uthira+Ranganathar+Swamy+Temple"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="event-action-btn secondary-btn"
+          >
+            <span>📍</span>
+            <span>View Location</span>
+          </a>
+        </div>
+
+        <!-- Card 2: Reception Celebration -->
+        <div class="event-venue-card reveal-on-scroll delay-1">
+          <div>
+            <div class="event-icon-badge">✨</div>
+            <span class="event-badge-label">Evening Celebration</span>
+            <h3 class="event-card-title">RECEPTION CELEBRATION</h3>
+
+            <div class="event-time-pill">
+              Sunday, 22 November 2026 • 6:00 PM onwards
+            </div>
+
+            <div class="event-details-divider"></div>
+
+            <h4 class="event-venue-heading">SVS LAKSHMI PALACE</h4>
+            <p class="event-venue-address">
+              M.C. ROAD, NH SERVICE ROAD<br />
+              PALLIKONDA, TAMIL NADU
+            </p>
+          </div>
+
+          <a
+            id="btnReceptionMap"
+            href="https://maps.google.com/maps?vet=10CAAQoqAOahcKEwiogZjKut6XAxUAAAAAHQAAAAAQBQ..i&udm&fvr=1&pvq=Cg0vZy8xMXk1cTViNGZjIhcKEXN2cyBsYWtzaG1pIG1haGFsEAIYA4kB2wmzrEUJmXA&lqi=ChxzdnMgbGFrc2htaSBtYWhhbCBwYWxsaWtvbmRhSKuj1OKWvYCACFoqEAAQARACGAAYAhgDIhxzdnMgbGFrc2htaSBtYWhhbCBwYWxsaWtvbmRhkgENd2VkZGluZ192ZW51ZQ&cs=0&um=1&ie=UTF-8&fb=1&gl=in&sa=X&ftid=0x3bad15004a3ebf47:0x70990945acb309db"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="event-action-btn"
+          >
+            <span>📍</span>
+            <span>GET DIRECTIONS</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. PHOTO GALLERY & LIGHTBOX
+       ========================================================================= -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tagline">Cherished Moments</span>
+        <h2 class="section-title">Photo Gallery</h2>
+        <div class="ornament-divider">
+          <span class="ornament-line"></span>
+          <span class="ornament-diamond">✦</span>
+          <span class="ornament-line"></span>
+        </div>
+        <p class="section-subtitle">
+          Capturing the love, laughter, and sacred traditions that bind our lives together.
+        </p>
+      </div>
+
+      <!-- Gallery Header Toolbar: Layout Switcher & Category Filters -->
+      <div class="gallery-toolbar reveal-on-scroll">
+        <!-- Layout Switcher (Editorial vs Polaroid) -->
+        <div class="gallery-layout-switcher" role="group" aria-label="Gallery View Layout">
+          <button class="gallery-layout-btn active" data-layout="editorial" type="button" title="Editorial Magazine Layout">
+            <span>🏛️</span>
+            <span>Editorial Grid</span>
+          </button>
+          <button class="gallery-layout-btn" data-layout="polaroid" type="button" title="Polaroid Keepsakes Layout">
+            <span>📷</span>
+            <span>Polaroid Keepsakes</span>
+          </button>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="gallery-filters">
+          <button class="gallery-filter-btn active" data-filter="all" type="button">All <span class="filter-count"></span></button>
+          <button class="gallery-filter-btn" data-filter="couple" type="button">Couple <span class="filter-count"></span></button>
+          <button class="gallery-filter-btn" data-filter="engagement" type="button">Engagement <span class="filter-count"></span></button>
+          <button class="gallery-filter-btn" data-filter="family" type="button">Family <span class="filter-count"></span></button>
+        </div>
+      </div>
+
+      <!-- Gallery Grid (Populated dynamically) -->
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Rendered via js/gallery.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Full-Screen Lightbox Modal -->
+  <div id="galleryLightbox" role="dialog" aria-modal="true" aria-label="Photo Lightbox">
+    <!-- Auto-Slideshow Progress Bar -->
+    <div class="lightbox-progress-bar-wrap">
+      <div id="lightboxProgressBar" class="lightbox-progress-bar"></div>
+    </div>
+
+    <!-- Top Action Toolbar -->
+    <div class="lightbox-top-toolbar">
+      <div class="lightbox-meta-badge" id="lightboxBadge">MOMENT</div>
+      <div class="lightbox-action-tools">
+        <button id="btnLightboxSlideshow" class="lightbox-tool-btn" type="button" title="Toggle Auto-Slideshow (Spacebar)">
+          <span>▶ Slideshow</span>
+        </button>
+        <button id="btnLightboxZoomIn" class="lightbox-tool-btn" type="button" title="Zoom In (+)">
+          <span>🔍 +</span>
+        </button>
+        <button id="btnLightboxZoomOut" class="lightbox-tool-btn" type="button" title="Zoom Out (-)">
+          <span>🔍 −</span>
+        </button>
+        <button id="btnLightboxResetZoom" class="lightbox-tool-btn" type="button" title="Reset Zoom">
+          <span>↺ 100%</span>
+        </button>
+        <button id="btnLightboxFullscreen" class="lightbox-tool-btn" type="button" title="Toggle Fullscreen">
+          <span>⛶</span>
+        </button>
+        <button class="lightbox-close-btn" aria-label="Close Lightbox" type="button" title="Close (Esc)">&times;</button>
+      </div>
+    </div>
+
+    <!-- Prev & Next Arrow Controls -->
+    <button class="lightbox-nav-btn lightbox-prev" aria-label="Previous Photo" type="button">&#10094;</button>
+
+    <div class="lightbox-content-box">
+      <div class="lightbox-img-stage">
+        <img id="lightboxImage" src="" alt="Expanded View" class="lightbox-image" />
+      </div>
+      <div class="lightbox-caption-bar">
+        <h4 id="lightboxTitle" class="lightbox-title"></h4>
+        <p id="lightboxDesc" class="lightbox-desc"></p>
+        <span id="lightboxCounter" class="lightbox-counter"></span>
+      </div>
+    </div>
+
+    <button class="lightbox-nav-btn lightbox-next" aria-label="Next Photo" type="button">&#10095;</button>
+  </div>
+
+  <!-- =========================================================================
+       8. FINAL CLOSING & FOOTER
+       ========================================================================= -->
+  <section class="final-thankyou-section">
+    <div class="container reveal-on-scroll">
+      <div class="ornament-divider">
+        <span class="ornament-line"></span>
+        <span class="ornament-diamond">✦</span>
+        <span class="ornament-line"></span>
+      </div>
+
+      <h3 class="final-couple-names">Suriya &amp; Kaviya</h3>
+      <h2 class="final-quote">"Your Presence Is Our Greatest Blessing"</h2>
+      <p class="final-thankyou">Thank You for Celebrating Our Special Day</p>
+
+      <div class="ornament-divider">
+        <span class="ornament-line"></span>
+        <span class="ornament-diamond">✦</span>
+        <span class="ornament-line"></span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p class="footer-date">22 NOVEMBER 2026 • WEDDING CELEBRATION</p>
+      <div class="footer-divider"></div>
+      <p class="footer-credit">SK WEDDING — Crafted with Love &amp; Devotion</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="config.js"></script>
+  <script src="js/petals.js"></script>
+  <script src="js/opening.js"></script>
+  <script src="js/music.js"></script>
+  <script src="js/countdown.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
