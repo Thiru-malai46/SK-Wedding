@@ -66,11 +66,11 @@ window.WEDDING_CONFIG = {
       day: "Sunday",
       dateFormatted: "22 November 2026",
       fullDateText: "Sunday, 22 November 2026",
-      time: "6:00 PM onwards",
+      time: "6:30 PM onwards",
       timeNote: "An Evening of Joy & Dinner",
       venueName: "SVS LAKSHMI PALACE",
       address: "M.C. ROAD, NH SERVICE ROAD, PALLIKONDA",
-      mapUrl: "https://maps.google.com/maps?vet=10CAAQoqAOahcKEwiogZjKut6XAxUAAAAAHQAAAAAQBQ..i&udm&fvr=1&pvq=Cg0vZy8xMXk1cTViNGZjIhcKEXN2cyBsYWtzaG1pIG1haGFsEAIYA4kB2wmzrEUJmXA&lqi=ChxzdnMgbGFrc2htaSBtYWhhbCBwYWxsaWtvbmRhSKuj1OKWvYCACFoqEAAQARACGAAYAhgDIhxzdnMgbGFrc2htaSBtYWhhbCBwYWxsaWtvbmRhkgENd2VkZGluZ192ZW51ZQ&cs=0&um=1&ie=UTF-8&fb=1&gl=in&sa=X&ftid=0x3bad15004a3ebf47:0x70990945acb309db",
+      mapUrl: "https://share.google/VYzgxDQaoTLxBZwB7",
       mapButtonText: "GET DIRECTIONS",
       icon: "✨"
     }
@@ -105,30 +105,19 @@ window.WEDDING_CONFIG = {
     {
       chapterNumber: "03",
       chapter: "Chapter 03",
-      title: "The Sacred Muhurtham",
-      icon: "🛕",
-      date: "Sunday, 22 Nov 2026 • 7:30 AM",
-      badge: "Holy Matrimony",
-      quote: "Under the divine temple bells, two lives become one eternal bond.",
-      description: "Under the sacred presence of Arulmigu Uthira Ranganathar Swamy and amidst Vedic mantras, we take the auspicious seven steps as husband and wife.",
+      title: "SAVE THE DATE",
+      icon: "💌",
+      date: "22 • 11 • 2026 | Sunday | 7:30 AM",
+      badge: "Traditional & Royal",
+      quote: "Two Hearts. One Forever.",
+      description: "A beautiful love story is turning into an eternal promise. Join us as we begin our forever with the blessings of the Almighty.",
       image: "assets/images/save-the-date.jpg",
-      placeholderLabel: "Save The Date / Muhurtham Photo"
+      placeholderLabel: "Save The Date Photo"
     }
   ],
 
   // Creative Photo Gallery (Real Engagement & Couple Photographs with Distinct Names)
   gallery: [
-    {
-      id: "e1",
-      category: "engagement",
-      title: "Sacred Promises",
-      caption: "The divine ring exchange ceremony under the golden floral arch.",
-      badge: "Ritual",
-      orientation: "standard",
-      likes: 156,
-      src: "assets/images/engagement/engagement-1.jpg",
-      thumb: "assets/images/engagement/engagement-1.jpg"
-    },
     {
       id: "e2",
       category: "engagement",
@@ -161,6 +150,28 @@ window.WEDDING_CONFIG = {
       likes: 144,
       src: "assets/images/couple/couple-4.jpg",
       thumb: "assets/images/couple/couple-4.jpg"
+    },
+    {
+      id: "c3",
+      category: "couple",
+      title: "Warm Embrace",
+      caption: "Suriya & Kaviya — Wrapped in love and timeless smiles against rustic terracotta arches.",
+      badge: "Embrace",
+      orientation: "standard",
+      likes: 185,
+      src: "assets/images/couple/couple-5.jpg",
+      thumb: "assets/images/couple/couple-5.jpg"
+    },
+    {
+      id: "c4",
+      category: "couple",
+      title: "Retro Romance",
+      caption: "Suriya & Kaviya — Riding through life with laughter, style, and playful joy on a vintage ride.",
+      badge: "Journey",
+      orientation: "standard",
+      likes: 196,
+      src: "assets/images/couple/couple-6.jpg",
+      thumb: "assets/images/couple/couple-6.jpg"
     }
   ],
 

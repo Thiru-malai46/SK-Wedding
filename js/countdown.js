@@ -51,7 +51,7 @@
 
   const eventTitle = encodeURIComponent("Wedding: K Suriya ♥ V Kaviya");
   const eventDetails = encodeURIComponent(
-    "Wedding Ceremony: 7:30 AM - 9:00 AM at Arulmigu Uthira Ranganathar Swamy Temple\nReception: 6:00 PM onwards at SVS Lakshmi Palace, Pallikonda.\nWe warmly request your presence and blessings!"
+    "Wedding Ceremony: 7:30 AM - 9:00 AM at Arulmigu Uthira Ranganathar Swamy Temple\nReception: 6:30 PM onwards at SVS Lakshmi Palace, Pallikonda.\nWe warmly request your presence and blessings!"
   );
   const eventLocation = encodeURIComponent(
     "Arulmigu Uthira Ranganathar Swamy Temple & SVS Lakshmi Palace, Pallikonda"
@@ -78,7 +78,7 @@
         "METHOD:PUBLISH",
         "BEGIN:VEVENT",
         "SUMMARY:Wedding: K Suriya ♥ V Kaviya",
-        "DESCRIPTION:Wedding Ceremony: 7:30 AM - 9:00 AM at Arulmigu Uthira Ranganathar Swamy Temple\\nReception: 6:00 PM onwards at SVS Lakshmi Palace, Pallikonda.",
+        "DESCRIPTION:Wedding Ceremony: 7:30 AM - 9:00 AM at Arulmigu Uthira Ranganathar Swamy Temple\\nReception: 6:30 PM onwards at SVS Lakshmi Palace, Pallikonda.",
         "LOCATION:SVS Lakshmi Palace, Pallikonda",
         "DTSTART:20261122T020000Z",
         "DTEND:20261122T163000Z",

@@ -15,13 +15,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const ceremonyBtn = document.getElementById('btnCeremonyMap');
   if (ceremonyBtn && cfg.events.ceremony) {
     ceremonyBtn.href = cfg.events.ceremony.mapUrl;
-    ceremonyBtn.textContent = cfg.events.ceremony.mapButtonText || 'View Location';
+    ceremonyBtn.innerHTML = `<span>📍</span> <span>${cfg.events.ceremony.mapButtonText || 'View Location'}</span>`;
   }
 
   const receptionBtn = document.getElementById('btnReceptionMap');
   if (receptionBtn && cfg.events.reception) {
     receptionBtn.href = cfg.events.reception.mapUrl;
-    receptionBtn.textContent = cfg.events.reception.mapButtonText || 'GET DIRECTIONS';
+    receptionBtn.innerHTML = `<span>📍</span> <span>${cfg.events.reception.mapButtonText || 'GET DIRECTIONS'}</span>`;
   }
 
   // =========================================================================
